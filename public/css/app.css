@@ -1307,6 +1307,9 @@ select {
 .min-w-0 {
   min-width: 0px;
 }
+.max-w-2xl {
+  max-width: 42rem;
+}
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -1385,6 +1388,9 @@ select {
 .flex-wrap {
   flex-wrap: wrap;
 }
+.items-end {
+  align-items: flex-end;
+}
 .items-center {
   align-items: center;
 }
@@ -1396,6 +1402,9 @@ select {
 }
 .justify-between {
   justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
 }
 .justify-items-center {
   justify-items: center;
@@ -3039,12 +3048,12 @@ span.flatpickr-weekday {
     grid-column: span 2 / span 2;
   }
 
-  .md\:mb-2 {
-    margin-bottom: 0.5rem;
-  }
-
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:flex {
+    display: flex;
   }
 
   .md\:grid {
@@ -3075,10 +3084,6 @@ span.flatpickr-weekday {
 
   .lg\:col-span-4 {
     grid-column: span 4 / span 4;
-  }
-
-  .lg\:mb-0 {
-    margin-bottom: 0px;
   }
 
   .lg\:w-2\/3 {
