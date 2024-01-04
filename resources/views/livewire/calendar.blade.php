@@ -5,4 +5,7 @@
 
     <div class="flex">
         @for($day = 0; $day < 7; $day++) {{$currentWeek[$day]}} @endfor </div>
+            @foreach($events as $event)
+            {{$event->start_date}}<br>
+            @endforeach
     </div>
