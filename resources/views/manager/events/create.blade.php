@@ -13,9 +13,9 @@
                     <x-jet-validation-errors class="mb-4" />
 
                     @if (session('status'))
-                    <div class="mb-4 font-medium text-sm text-green-600">
-                        {{ session('status') }}
-                    </div>
+                        <div class="mb-4 font-medium text-sm text-green-600">
+                            {{ session('status') }}
+                        </div>
                     @endif
 
                     <form method="POST" action="{{ route('events.store') }}">
@@ -29,7 +29,7 @@
                         <div class="mt-4">
                             <x-jet-label for="information" value="イベント詳細" />
                             <x-textarea row="3" id="information" name="information"
-                                class="block mt-1 w-full">{{old('information')}}</x-textarea>
+                                class="block mt-1 w-full">{{ old('information') }}</x-textarea>
                         </div>
 
                         <div class="md:flex justify-between">
@@ -70,5 +70,5 @@
             </div>
         </div>
     </div>
-    <script src="{{mix('js/flatpickr.js')}}"></script>
+    <script src="{{ mix('js/flatpickr.js') }}"></script>
 </x-app-layout>
