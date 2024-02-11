@@ -38,8 +38,7 @@ class ReservationController extends Controller
             ->latest()
             ->first();
 
-
-        return view('event-detail', compact('event', 'reservablePeople', 'isReserved', ));
+        return view('event-detail', compact('event', 'reservablePeople', 'isReserved'));
     }
 
     public function reserve(Request $request)
